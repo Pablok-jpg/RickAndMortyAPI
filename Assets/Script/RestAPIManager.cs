@@ -89,7 +89,7 @@ public class RestAPIManager : MonoBehaviour
         }
         else
         {
-           //Debug.Log(www.GetResponseHeader("content-type"));
+            //Debug.Log(www.GetResponseHeader("content-type"));
 
             // Show results as text
             Debug.Log(www.downloadHandler.text);
