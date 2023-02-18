@@ -58,7 +58,7 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: RestAPIManager
-    methodName: GetPlayerInfoClick
+    methodName: GetPlayerDataOnClick
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -406,7 +406,7 @@ ScriptsOnlyBuild:
     className: ContentSizeFitter
   - hash:
       serializedVersion: 2
-      Hash: 0fb4c003aca3b31f162eefead43315e3
+      Hash: 6f6d4f7fd4153534be54036d792acf85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RestAPIManager

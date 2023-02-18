@@ -742,8 +742,6 @@ struct List_1_tD2E7A87088A4F1FBE2DCD6E5BD9894222A78FB1E;
 struct List_1_t2147F3FC8B4F16EE577CAF4E40F9D9A684B4CBBD;
 // System.Collections.Generic.List`1<UnityEngine.UIElements.TemplateAsset>
 struct List_1_t63B31A07921C5E19BCA9E85447E2260F37E3E777;
-// System.Collections.Generic.List`1<TMPro.TextMeshProUGUI>
-struct List_1_tA45AF46ADAFAFE4A5AB3C1F2504647F7CF98AD08;
 // System.Collections.Generic.List`1<UnityEngine.TextCore.Text.TextStyle>
 struct List_1_t2AFC9C88B8DEFBC5C4C13A94CD97E65EF9AA29C1;
 // System.Collections.Generic.List`1<UnityEngine.Texture2D>
@@ -1964,8 +1962,6 @@ struct InternalFE_tABC32B0010525375378D0B5756E5A35D4C17D6F7;
 struct InternalThread_tF40B7BFCBD60C82BD8475A22FF5186CA10293687;
 // UnityEngine.Events.InvokableCallList
 struct InvokableCallList_t309E1C8C7CE885A0D2F98C84CEA77A8935688382;
-// JsonData
-struct JsonData_tD9400869498C1EE568CCEB15CCA2799E639F194B;
 // TMPro.KerningTable
 struct KerningTable_t040C3FE3B519B12AADE1C5B00628581551D5AB6B;
 // UnityEngine.UIElements.KeyDownEvent
@@ -2464,6 +2460,8 @@ struct UploadHandler_t7E504B1A83346248A0C8C4AF73A893226CB83EF6;
 struct Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E;
 // System.UriParser
 struct UriParser_t920B0868286118827C08B08A15A9456AF6C19D81;
+// UserDataJSON
+struct UserDataJSON_tFA40853CAE13A5C7D2BD86BC6C7D624C8C8E2F1D;
 // UnityEngine.UIElements.UxmlAttributeOverridesTraits
 struct UxmlAttributeOverridesTraits_tE607A4A26491C6A3DE530D8822901732592D2476;
 // UnityEngine.UIElements.UxmlBoolAttributeDescription
@@ -4634,12 +4632,10 @@ struct CharUnicodeInfo_t4299735F783EC737711E36E5F12B335F595B37C4  : public Runti
 // Character
 struct Character_tAF47BB8D49829E1464C3692B366FC33C5B38CD61  : public RuntimeObject
 {
-	// System.String Character::name
-	String_t* ___name_0;
-	// System.String Character::species
-	String_t* ___species_1;
+	// System.Int32 Character::id
+	int32_t ___id_0;
 	// System.String Character::image
-	String_t* ___image_2;
+	String_t* ___image_1;
 };
 
 // UnityEngine.ClassLibraryInitializer
@@ -7081,17 +7077,6 @@ struct JobsUtility_t912A22C375F804D687A2EFC9F4FC5D33C54B9A9C_StaticFields
 {
 	// Unity.Jobs.LowLevel.Unsafe.JobsUtility/PanicFunction_ Unity.Jobs.LowLevel.Unsafe.JobsUtility::PanicFunction
 	PanicFunction__t9B5243C52C7988A1D3B5A297CF2D7B4C63CF0E02* ___PanicFunction_0;
-};
-
-// JsonData
-struct JsonData_tD9400869498C1EE568CCEB15CCA2799E639F194B  : public RuntimeObject
-{
-	// System.Int32 JsonData::id
-	int32_t ___id_0;
-	// System.String JsonData::name
-	String_t* ___name_1;
-	// System.Int32[] JsonData::deck
-	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___deck_2;
 };
 
 // UnityEngine.JsonUtility
@@ -12235,6 +12220,13 @@ struct UriParser_t920B0868286118827C08B08A15A9456AF6C19D81_StaticFields
 	int32_t ___FileSyntaxFlags_25;
 };
 
+// UserDataJSON
+struct UserDataJSON_tFA40853CAE13A5C7D2BD86BC6C7D624C8C8E2F1D  : public RuntimeObject
+{
+	// System.Int32[] UserDataJSON::deck
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___deck_0;
+};
+
 // System.Buffers.Utilities
 struct Utilities_t47DFEED0E704B42BDB4499194D7C812E763E6186  : public RuntimeObject
 {
@@ -13713,54 +13705,54 @@ struct ResourceEnumerator_t6BAC4B31C7448C9868FB43C5899684520F2DB085  : public Ru
 	int32_t ____dataPosition_3;
 };
 
-// RestAPIManager/<DownloadImage>d__12
-struct U3CDownloadImageU3Ed__12_t5F89B4115561C26A94C694B6AB8A1039E4569BCA  : public RuntimeObject
+// RestAPIManager/<DownloadImage>d__10
+struct U3CDownloadImageU3Ed__10_t30585C9A89C3873DF0B2C036B1AA1021FB6B99EF  : public RuntimeObject
 {
-	// System.Int32 RestAPIManager/<DownloadImage>d__12::<>1__state
+	// System.Int32 RestAPIManager/<DownloadImage>d__10::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object RestAPIManager/<DownloadImage>d__12::<>2__current
+	// System.Object RestAPIManager/<DownloadImage>d__10::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// System.String RestAPIManager/<DownloadImage>d__12::MediaUrl
-	String_t* ___MediaUrl_2;
-	// RestAPIManager RestAPIManager/<DownloadImage>d__12::<>4__this
+	// System.String RestAPIManager/<DownloadImage>d__10::url
+	String_t* ___url_2;
+	// RestAPIManager RestAPIManager/<DownloadImage>d__10::<>4__this
 	RestAPIManager_tC28228FBF091FCD7BD2FAE9487F979820BA3C724* ___U3CU3E4__this_3;
-	// System.Int32 RestAPIManager/<DownloadImage>d__12::place
-	int32_t ___place_4;
-	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<DownloadImage>d__12::<request>5__2
+	// System.Int32 RestAPIManager/<DownloadImage>d__10::Place
+	int32_t ___Place_4;
+	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<DownloadImage>d__10::<request>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CrequestU3E5__2_5;
 };
 
-// RestAPIManager/<GetCharacters>d__11
-struct U3CGetCharactersU3Ed__11_t2C5FA8535971292A62C0D9D1EF8DF9CC830C0097  : public RuntimeObject
+// RestAPIManager/<GetCharacter>d__9
+struct U3CGetCharacterU3Ed__9_t544E2A39BB2AF0A17EBD57C83EFCAE9EFE8BCD47  : public RuntimeObject
 {
-	// System.Int32 RestAPIManager/<GetCharacters>d__11::<>1__state
+	// System.Int32 RestAPIManager/<GetCharacter>d__9::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object RestAPIManager/<GetCharacters>d__11::<>2__current
+	// System.Object RestAPIManager/<GetCharacter>d__9::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// RestAPIManager RestAPIManager/<GetCharacters>d__11::<>4__this
+	// RestAPIManager RestAPIManager/<GetCharacter>d__9::<>4__this
 	RestAPIManager_tC28228FBF091FCD7BD2FAE9487F979820BA3C724* ___U3CU3E4__this_2;
-	// System.Int32 RestAPIManager/<GetCharacters>d__11::ID
-	int32_t ___ID_3;
-	// System.Int32 RestAPIManager/<GetCharacters>d__11::place
-	int32_t ___place_4;
-	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<GetCharacters>d__11::<www>5__2
+	// System.Int32 RestAPIManager/<GetCharacter>d__9::Id
+	int32_t ___Id_3;
+	// System.Int32 RestAPIManager/<GetCharacter>d__9::Place
+	int32_t ___Place_4;
+	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<GetCharacter>d__9::<www>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwwwU3E5__2_5;
 };
 
-// RestAPIManager/<GetPlayerInfo>d__10
-struct U3CGetPlayerInfoU3Ed__10_t79B58C578B8A68FEFBA5F7A02B5B9908C69E84A7  : public RuntimeObject
+// RestAPIManager/<GetPlayerData>d__8
+struct U3CGetPlayerDataU3Ed__8_t6523C24F6D79FBB01918E9C10B78CF6FD9DA93D1  : public RuntimeObject
 {
-	// System.Int32 RestAPIManager/<GetPlayerInfo>d__10::<>1__state
+	// System.Int32 RestAPIManager/<GetPlayerData>d__8::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object RestAPIManager/<GetPlayerInfo>d__10::<>2__current
+	// System.Object RestAPIManager/<GetPlayerData>d__8::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// RestAPIManager RestAPIManager/<GetPlayerInfo>d__10::<>4__this
+	// RestAPIManager RestAPIManager/<GetPlayerData>d__8::<>4__this
 	RestAPIManager_tC28228FBF091FCD7BD2FAE9487F979820BA3C724* ___U3CU3E4__this_2;
-	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<GetPlayerInfo>d__10::<www>5__2
+	// UnityEngine.Networking.UnityWebRequest RestAPIManager/<GetPlayerData>d__8::<www>5__2
 	UnityWebRequest_t6233B8E22992FC2364A831C1ACB033EF3260C39F* ___U3CwwwU3E5__2_3;
-	// JsonData RestAPIManager/<GetPlayerInfo>d__10::<user>5__3
-	JsonData_tD9400869498C1EE568CCEB15CCA2799E639F194B* ___U3CuserU3E5__3_4;
-	// System.Int32 RestAPIManager/<GetPlayerInfo>d__10::<i>5__4
+	// UserDataJSON RestAPIManager/<GetPlayerData>d__8::<user>5__3
+	UserDataJSON_tFA40853CAE13A5C7D2BD86BC6C7D624C8C8E2F1D* ___U3CuserU3E5__3_4;
+	// System.Int32 RestAPIManager/<GetPlayerData>d__8::<i>5__4
 	int32_t ___U3CiU3E5__4_5;
 };
 
@@ -46434,18 +46426,16 @@ struct RestAPIManager_tC28228FBF091FCD7BD2FAE9487F979820BA3C724  : public MonoBe
 {
 	// System.Collections.Generic.List`1<UnityEngine.UI.RawImage> RestAPIManager::YourRawImage
 	List_1_t8F8EC453709D820AD028F01D85A01A31FB4B1B52* ___YourRawImage_4;
-	// System.Collections.Generic.List`1<TMPro.TextMeshProUGUI> RestAPIManager::textNames
-	List_1_tA45AF46ADAFAFE4A5AB3C1F2504647F7CF98AD08* ___textNames_5;
-	// System.Int32 RestAPIManager::userID
-	int32_t ___userID_6;
+	// System.String RestAPIManager::RickAndoMortyApi
+	String_t* ___RickAndoMortyApi_5;
+	// System.String RestAPIManager::ServerApiPath
+	String_t* ___ServerApiPath_6;
 	// System.Collections.Generic.List`1<System.Int32> RestAPIManager::generatedNumbers
 	List_1_t05915E9237850A58106982B7FE4BC5DA4E872E73* ___generatedNumbers_7;
 	// System.Int32[] RestAPIManager::cards
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___cards_8;
-	// System.String RestAPIManager::myApiPath
-	String_t* ___myApiPath_9;
-	// System.String RestAPIManager::rickApiPath
-	String_t* ___rickApiPath_10;
+	// System.Int32 RestAPIManager::UserId
+	int32_t ___UserId_9;
 };
 
 // UnityEngine.UIElements.RuntimePanel
@@ -55341,17 +55331,17 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3188 = { sizeof(U3CModuleU3E
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3189;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3189 = { sizeof(pruebaa_t6FB82164D9F54A4B87C5748FAE3956D0C193DA26), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3190;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3190 = { sizeof(U3CGetPlayerInfoU3Ed__10_t79B58C578B8A68FEFBA5F7A02B5B9908C69E84A7), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3190 = { sizeof(U3CGetPlayerDataU3Ed__8_t6523C24F6D79FBB01918E9C10B78CF6FD9DA93D1), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191 = { sizeof(U3CGetCharactersU3Ed__11_t2C5FA8535971292A62C0D9D1EF8DF9CC830C0097), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3191 = { sizeof(U3CGetCharacterU3Ed__9_t544E2A39BB2AF0A17EBD57C83EFCAE9EFE8BCD47), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3192;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3192 = { sizeof(U3CDownloadImageU3Ed__12_t5F89B4115561C26A94C694B6AB8A1039E4569BCA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3192 = { sizeof(U3CDownloadImageU3Ed__10_t30585C9A89C3873DF0B2C036B1AA1021FB6B99EF), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3193;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3193 = { sizeof(RestAPIManager_tC28228FBF091FCD7BD2FAE9487F979820BA3C724), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3194;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3194 = { sizeof(Character_tAF47BB8D49829E1464C3692B366FC33C5B38CD61), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3195;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3195 = { sizeof(JsonData_tD9400869498C1EE568CCEB15CCA2799E639F194B), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3195 = { sizeof(UserDataJSON_tFA40853CAE13A5C7D2BD86BC6C7D624C8C8E2F1D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3196;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3196 = { sizeof(ChatController_t21BE953E1D5ADF0BA9F3B03C205203CADDC64C15), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3197;
