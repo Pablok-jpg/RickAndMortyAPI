@@ -1121,4 +1121,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/ESCRITORIO/UNIVERSIDAD/API/RickAndMortyAPI/docs
+  playerPath: D:/ESCRITORIO/UNIVERSIDAD/API/RickAndMortyAPI/Builds
